@@ -1,4 +1,15 @@
-<h1 id="oom分析">oom分析</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oom</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="oom分析">oom分析</h1>
 <h3 id="oom-calltrace">OOM calltrace</h3>
 <pre><code>[&lt;ffffffff816a3e81&gt;] dump_stack+0x19/0x1b
 [&lt;ffffffff8169f276&gt;] dump_header+0x90/0x229
@@ -222,4 +233,7 @@ got_pg<span class="token punctuation">:</span>
         <span class="token keyword">return</span> page<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
+</div>
+</body>
 
+</html>
