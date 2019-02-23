@@ -1,4 +1,15 @@
-<h1 id="oom分析">oom分析</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oom</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="oom分析">oom分析</h1>
 <h3 id="oom-calltrace">OOM calltrace</h3>
 <pre><code>[&lt;ffffffff816a3e81&gt;] dump_stack+0x19/0x1b
 [&lt;ffffffff8169f276&gt;] dump_header+0x90/0x229
@@ -17,7 +28,7 @@
 [&lt;ffffffff816ac608&gt;] page_fault+0x28/0x30
 </code></pre>
 <h3 id="何时发生oom">何时发生OOM</h3>
-<pre class=" language-c"><code class="prism  language-c"><span class="token keyword">static</span> <span class="token keyword">inline</span> <span class="token keyword">struct</span> page <span class="token operator">*</span>
+<pre class=" language-c"><code class="prism ++ language-c"><span class="token keyword">static</span> <span class="token keyword">inline</span> <span class="token keyword">struct</span> page <span class="token operator">*</span>
 <span class="token function">__alloc_pages_slowpath</span><span class="token punctuation">(</span>gfp_t gfp_mask<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">int</span> order<span class="token punctuation">,</span>
         <span class="token keyword">struct</span> zonelist <span class="token operator">*</span>zonelist<span class="token punctuation">,</span> <span class="token keyword">enum</span> zone_type high_zoneidx<span class="token punctuation">,</span>
         nodemask_t <span class="token operator">*</span>nodemask<span class="token punctuation">,</span> <span class="token keyword">struct</span> zone <span class="token operator">*</span>preferred_zone<span class="token punctuation">,</span>
@@ -222,4 +233,7 @@ got_pg<span class="token punctuation">:</span>
         <span class="token keyword">return</span> page<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
+</div>
+</body>
 
+</html>
